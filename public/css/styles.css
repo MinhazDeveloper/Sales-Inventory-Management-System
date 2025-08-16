@@ -1,0 +1,141 @@
+/* Topbar */
+.topbar {
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #eef0f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+.brand .dot {
+    width: 10px;
+    height: 10px;
+    background: #ff8a00;
+    border-radius: 50%;
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    min-height: calc(100vh - 60px);
+}
+.sidenav {
+    width: 220px;
+    background: #800080;
+    color: #e7f9ff;
+    padding: 14px 10px;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+}
+.sidenav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #e7f9ff;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+.sidenav a .icon {
+    width: 18px;
+}
+.sidenav a.active,
+.sidenav a:hover {
+    background: #0aa3c2;
+}
+
+.content {
+    flex: 1;
+    background: #f6f8fb;
+    padding: 18px;
+}
+
+/* Cards */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+.stat-card {
+    background: #fff;
+    border: 1px solid #edf0f4;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+}
+.stat-card .title {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+}
+.stat-card .value {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 4px 0 0;
+}
+.stat-card .thumb {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #800080;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(128, 0, 128, 0.25);
+    flex-shrink: 0;
+}
+
+/* Dropdown */
+.user-avatar-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+.dropdown-menu-custom {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 180px;
+    z-index: 100;
+}
+.dropdown-menu-custom p.username {
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.dropdown-menu-custom a,
+.dropdown-menu-custom button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+.dropdown-menu-custom a:hover,
+.dropdown-menu-custom button:hover {
+    background-color: #f0f0f0;
+}
