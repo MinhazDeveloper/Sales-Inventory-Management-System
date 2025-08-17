@@ -22,6 +22,8 @@ class ProductController extends Controller
     public function productStore(Request $request){
         try{
             $user_id = $request->header('id');
+            dd($user_id);
+
             $category_id = $request->input('category_id');
             $img = $request->file('image');
             // dd($img);

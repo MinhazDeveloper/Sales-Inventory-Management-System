@@ -72,7 +72,7 @@ Route::middleware([TokenverifyMiddleware::class])->group(function () {
 //invoice route
 Route::middleware([TokenverifyMiddleware::class])->group(function () {
     Route::get('/create-invoice', [InvoiceController::class, 'invoiceCreate'])->name('invoiceCreate');
-    Route::post('product-save', [InvoiceController::class, 'productSave'])->name('productSave');
+    Route::post('invoice-save', [InvoiceController::class, 'invoiceSave'])->name('invoiceSave');
     Route::get('/sales-invoice/{id}', [InvoiceController::class, 'invoice'])->name('sales.invoice');
     Route::get('invoice/{id}/download', [InvoiceController::class, 'downloadInvoice'])->name('invoice.download');
 
@@ -81,6 +81,12 @@ Route::middleware([TokenverifyMiddleware::class])->group(function () {
 Route::middleware([TokenverifyMiddleware::class])->group(function () {
         Route::get('/sales-report', [SalesReportController::class, 'index'])->name('reportForm');
         Route::post('/sales-report-generate', [SalesReportController::class, 'generate'])->name('sales.report.generate');
+
+});
+//dashboard route
+Route::middleware([TokenverifyMiddleware::class])->group(function () {
+        Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+        Route::get('summary', [DashboardController::class, 'summary'])->name('summary');
 
 });
 

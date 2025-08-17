@@ -10,6 +10,7 @@ class Sale extends Model
         'customer_name',
         'total_amount',
         'sale_date',
+        'user_id',
     ];
     public function items(){
         return $this->hasMany(SaleItem::class);

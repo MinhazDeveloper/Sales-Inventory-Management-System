@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h2>New Sale</h2>
-    <form action="{{ route('productSave') }}" method="POST" id="saleForm">
+    <form action="{{ route('invoiceSave') }}" method="POST" id="saleForm">
         @csrf
         <input type="hidden" name="sale_date" id="sale_date">
         <div class="mb-3">
