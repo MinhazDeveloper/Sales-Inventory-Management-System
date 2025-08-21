@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Customer;
 use App\Models\Product;
 use App\Models\Sale;
 use App\Models\SaleItem;
@@ -11,14 +12,14 @@ use Barryvdh\DomPDF\Facade\Pdf;
 class InvoiceController extends Controller
 {
     public function invoiceCreate(){
+        $customers = Customer::all();
         $products = Product::all();
-        return view('invoice.invoice_page',compact('products'));
+        return view('invoice.invoice_page',compact('products','customers'));
     }
     public function invoiceSave(Request $request) {
         $user_id = $request->header('id');
-        // dd($user_id);
+        // dd($request);
         $request->validate([
-            'customer_name' => 'required|string|max:255',
             'total_amount' => 'required|numeric|min:0',
             'products' => 'required|array|min:1',
             'quantities' => 'required|array',
@@ -27,7 +28,7 @@ class InvoiceController extends Controller
         ]);
 
         $sale = Sale::create([
-            'customer_name' => $request->customer_name,
+            'customer_id' => $request->customer_id,
             'total_amount' => $request->total_amount,
             'sale_date' => $request->sale_date,
             'user_id' => $user_id

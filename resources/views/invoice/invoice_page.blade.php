@@ -8,7 +8,12 @@
         <input type="hidden" name="sale_date" id="sale_date">
         <div class="mb-3">
             <label>Customer Name</label>
-            <input type="text" name="customer_name" class="form-control" required>
+            <select name="customer_id" id="customer_id" class="form-control" required>
+                <option value="">Select Customer</option>
+                @foreach($customers as $customer)
+                    <option value="{{ $customer->id }}">{{ $customer->name }}</option>
+                @endforeach
+            </select>
         </div>
 
         <table class="table" id="productsTable">
