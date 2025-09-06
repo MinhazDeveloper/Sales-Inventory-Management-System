@@ -82,6 +82,7 @@ Email Service: SMTP Configuration
 Clone the repository
 
 git clone https://github.com/your-username/Sales-Inventory-Management-System.git
+
 cd Sales-Inventory-Management-System
 
 
