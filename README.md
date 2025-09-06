@@ -4,7 +4,7 @@ A complete Sales & Inventory Management System built with Laravel, designed to m
 
 🚀 Features
 
-***User Authentication & Security***
+**User Authentication & Security**
 
 User Registration & Login
 
