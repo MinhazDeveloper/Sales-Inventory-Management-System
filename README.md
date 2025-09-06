@@ -1,3 +1,7 @@
+📦 Sales Inventory Management System
+
+A complete Sales & Inventory Management System built with Laravel, designed to manage categories, products, customers, sales, invoices, and reports with ease.
+
 Laravel-based Sales & Inventory Management System with Firebase JWT authentication, customer, product & category management, invoicing, and reporting dashboard
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
