@@ -102,10 +102,6 @@ Run the project
 
 php artisan serve
 
-📸 Screenshots
-
-(Add screenshots of Dashboard, Product List, Invoice PDF, Contact Form here for better presentation)
-
 📧 Contact
 
 If you want to connect:
