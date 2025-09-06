@@ -89,11 +89,6 @@ Install dependencies
 
 composer install
 
-Configure environment
-
-cp .env.example .env
-php artisan key:generate
-
 Setup database
 
 php artisan migrate --seed
@@ -105,6 +100,9 @@ php artisan serve
 📧 Contact
 
 If you want to connect:
+
 Author: Md Minhajur Rahman Talukder
+
 Email: minhazt14@gmail.com
+
 LinkedIn:https://linkedin.com/in/minhaz-dev1
