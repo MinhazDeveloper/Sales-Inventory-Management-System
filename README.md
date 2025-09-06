@@ -1,8 +1,8 @@
-<h1>📦 Sales Inventory Management System</h1>
+<h1>Sales Inventory Management System</h1>
 
 A complete Sales & Inventory Management System built with Laravel, designed to manage categories, products, customers, sales, invoices, and reports with ease.
 
-🚀 Features
+<h2>Features</h2>
 
 **User Authentication & Security**
 
