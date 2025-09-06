@@ -14,27 +14,27 @@ Authentication Middleware
 
 Logout Functionality
 
-Dashboard
+**Dashboard**
 
 User-friendly Dashboard for quick access to features
 
-Category Management
+**Category Management**
 
 Create, Update & Delete Categories
 
 Assign Products to Categories
 
-Customer Management
+**Customer Management**
 
 Add & Manage Customer Information
 
-Product Management
+**Product Management**
 
 Product Listing with Category Filtering
 
 Create & Manage Products
 
-Sales & Invoice Management
+**Sales & Invoice Management**
 
 Create Sales Records
 
@@ -42,19 +42,19 @@ Generate Invoices
 
 Download / Print Invoice as PDF
 
-Reports
+**Reports**
 
 Sales Reports
 
 PDF Report Generation
 
-Contact Form
+**Contact Form**
 
 Contact Form Validation
 
 Live Email Sending using SMTP
 
-🛠️ Tech Stack
+<h2>Tech Stack</h2>
 
 Framework: Laravel
 
@@ -81,27 +81,22 @@ Email Service: SMTP Configuration
 
 Clone the repository
 
-git clone https://github.com/your-username/sales-inventory.git
-cd sales-inventory
+git clone https://github.com/your-username/Sales-Inventory-Management-System.git
+cd Sales-Inventory-Management-System
 
 
 Install dependencies
 
 composer install
-npm install
-npm run dev
-
 
 Configure environment
 
 cp .env.example .env
 php artisan key:generate
 
-
 Setup database
 
 php artisan migrate --seed
-
 
 Run the project
 
