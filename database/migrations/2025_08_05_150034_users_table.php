@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('fax');
             $table->string('phone');
             $table->string('password');
-            $table->string('otp');
+            $table->string('otp')->nullable();
             $table->timestamps();
         });
         

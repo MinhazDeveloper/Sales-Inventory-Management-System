@@ -12,16 +12,16 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function dashboard(){
-        // return view('dashboard.summary', [
-        //     'totalProducts'   => 150,
-        //     'totalCategories' => 12,
-        //     'totalCustomers'  => 55,
-        //     'totalInvoices'   => 34,
-        //     'totalSale'       => 123456.78,
-        //     'vatCollection'   => 4500.50,
-        //     'totalCollection' => 127957.28,
-        // ]);
-        return view('dashboard.summary');
+        return view('dashboard.summary', [
+            'totalProducts'   => 150,
+            'totalCategories' => 12,
+            'totalCustomers'  => 55,
+            'totalInvoices'   => 34,
+            'totalSale'       => 123456.78,
+            'vatCollection'   => 4500.50,
+            'totalCollection' => 127957.28,
+        ]);
+        // return view('dashboard.summary');
     }
     public function summary(Request $request){
         $user_id = $request->header('id');

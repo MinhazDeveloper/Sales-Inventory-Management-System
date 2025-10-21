@@ -61,6 +61,7 @@ class UserController extends Controller
                         ->select('id')->first();
         if($count !== null){
             $token = JWTToken::createToken($request->email,$count->id);
+            // dd($token);
             return redirect()->route('dashboard')
                     ->cookie('token', $token, 60 * 20 * 30);
             ;

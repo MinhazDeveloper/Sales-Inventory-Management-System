@@ -15,6 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('customer_name');
             $table->decimal('total_amount', 10, 2);
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->cascadeOnUpdate()->restrictOnDelete();
+            $table->unsignedBigInteger('customer_id');
+            $table->foreign('customer_id')->references('id')->on('customers')->cascadeOnUpdate()->restrictOnDelete();
             $table->timestamps();
         });
     }
